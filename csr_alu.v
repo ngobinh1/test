@@ -8,7 +8,7 @@ module csr_alu (
     // If funct3[2] == 1 (instructions with 'i' suffix like csrrwi), use imm_ext. Otherwise, use src_a
     wire [31:0] csr_operand = (funct3[2]) ? imm_ext : src_a; 
 
-    always @(funct3[1:0]) begin
+    always @(funct3[1:0] or csr_rd or csr_operand) begin
         case (funct3[1:0])
             2'b01: csr_wd = csr_operand;               // csrrw, csrrwi (Ghi đè)
             2'b10: csr_wd = csr_rd | csr_operand;      // csrrs, csrrsi (Set bit)

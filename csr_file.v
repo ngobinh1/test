@@ -3,10 +3,11 @@ module csr_file (
     input wire rst,
     
     // --- Communication with CSR Instructions (from Datapath) ---
-    input wire [11:0] csr_addr,   // Extracted from instr[31:20]
+    input wire [11:0] csr_raddr,   // Read address from Decode
+    input wire [11:0] csr_waddr,   // Write address from Writeback
     input wire csr_we,            // Write Enable signal from Control Unit
     input wire [31:0] csr_wd,     // Data to be written to CSR
-    output reg [31:0] csr_rd,     // Data read from CSR (transferred to rd register)
+    output [31:0] csr_rd,     // Data read from CSR (transferred to rd register)
 
     // --- Communication with Exception/Trap Handler Block ---
     input wire is_exception,      // Exception flag signal (e.g., ecall instruction encountered)
@@ -24,17 +25,13 @@ module csr_file (
     reg [31:0] mepc;     // Address 0x341: Save PC of interrupted instruction to return later
     reg [31:0] mcause;   // Address 0x342: Save cause of interrupt/exception
 
-    // ---------------- CSR READ LOGIC (Combinational) ----------------
-    always @(csr_addr) begin
-        case(csr_addr)
-            12'h300: csr_rd = mstatus;
-            12'h305: csr_rd = mtvec;
-            12'h340: csr_rd = mscratch;
-            12'h341: csr_rd = mepc;
-            12'h342: csr_rd = mcause;
-            default: csr_rd = 32'd0; // If read address does not exist, return 0
-        endcase
-    end
+    // Read Logic with Internal Bypassing
+    assign csr_rd = (csr_we && (csr_raddr == csr_waddr)) ? csr_wd :
+                    (csr_raddr == 12'h300) ? mstatus :
+                    (csr_raddr == 12'h305) ? mtvec   :
+                    (csr_raddr == 12'h340) ? mscratch:
+                    (csr_raddr == 12'h341) ? mepc    :
+                    (csr_raddr == 12'h342) ? mcause  : 32'd0;
 
     // ---------------- CSR WRITE LOGIC (Sequential) ----------------
     always @(posedge clk) begin
@@ -48,7 +45,7 @@ module csr_file (
         end else begin  
             // 1. WRITE VIA NORMAL INSTRUCTIONS (csrrw, csrrs, csrrc,...)
             if (csr_we) begin
-                case(csr_addr)
+                case(csr_waddr)
                     12'h300: mstatus  <= csr_wd;
                     12'h305: mtvec    <= csr_wd;
                     12'h340: mscratch <= csr_wd;

@@ -37,12 +37,12 @@ Top level modules:
 	mux_3_1
 	mux_4to1
 
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/data_memory.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/data_memory.v}
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/alu.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/alu.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module data_memory
+-- Compiling module alu
 
 Top level modules:
-	data_memory
+	alu
 
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/writeback_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/writeback_cycle.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
@@ -99,26 +99,12 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	alu_decoder
 
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_top.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_top.v}
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/adder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/adder.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module tb_riscv_pipeline_full
+-- Compiling module adder
 
 Top level modules:
-	tb_riscv_pipeline_full
-
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_full.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_full.v}
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module tb_riscv_pipeline_mega
-
-Top level modules:
-	tb_riscv_pipeline_mega
-
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/memory_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/memory_cycle.v}
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module memory_cycle
-
-Top level modules:
-	memory_cycle
+	adder
 
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/control_unit.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/control_unit.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
@@ -127,12 +113,26 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	control_unit
 
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/adder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/adder.v}
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/memory_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/memory_cycle.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module adder
+-- Compiling module memory_cycle
 
 Top level modules:
-	adder
+	memory_cycle
+
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_full.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_full.v}
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+-- Compiling module tb_riscv_pipeline_mega
+
+Top level modules:
+	tb_riscv_pipeline_mega
+
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_top.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_top.v}
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+-- Compiling module tb_riscv_pipeline_full
+
+Top level modules:
+	tb_riscv_pipeline_full
 
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/hazard_unit.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/hazard_unit.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
@@ -141,13 +141,6 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	hazard_unit
 
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/fetch_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/fetch_cycle.v}
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module fetch_cycle
-
-Top level modules:
-	fetch_cycle
-
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_alu.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_alu.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 -- Compiling module csr_alu
@@ -155,19 +148,12 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	csr_alu
 
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_id.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_id.v}
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/fetch_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/fetch_cycle.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module tb_decode_cycle
+-- Compiling module fetch_cycle
 
 Top level modules:
-	tb_decode_cycle
-
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_ex.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_ex.v}
-QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module tb_execute_cycle
-
-Top level modules:
-	tb_execute_cycle
+	fetch_cycle
 
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/main_decoder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/main_decoder.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
@@ -176,6 +162,13 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	main_decoder
 
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/execute_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/execute_cycle.v}
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+-- Compiling module execute_cycle
+
+Top level modules:
+	execute_cycle
+
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/instruction_memory.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/instruction_memory.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 -- Compiling module instruction_memory
@@ -183,12 +176,19 @@ QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Top level modules:
 	instruction_memory
 
-} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/execute_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/execute_cycle.v}
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_ex.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_ex.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
--- Compiling module execute_cycle
+-- Compiling module tb_execute_cycle
 
 Top level modules:
-	execute_cycle
+	tb_execute_cycle
+
+} {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_id.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_id.v}
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+-- Compiling module tb_decode_cycle
+
+Top level modules:
+	tb_decode_cycle
 
 } {} {}} {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/decode_cycle.v} {1 {vlog -work work -vopt -stats=none {C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/decode_cycle.v}
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018

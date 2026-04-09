@@ -9,16 +9,16 @@ z2
 cModel Technology
 dC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/rtl_code
 T_opt
-!s110 1775699999
-VmW=GIHPn84aFo;b;NIMh^1
+!s110 1775706029
+VKWFMDNV?AC>=S>aWLB4Ze3
 04 22 4 work tb_riscv_pipeline_mega fast 0
-=1-e884a5770f74-69d7081f-14c-348c
+=1-e884a5770f74-69d71fad-bc-b4
 o-quiet -auto_acc_if_foreign -work work +acc
 Z0 tCvgOpt 0
 n@_opt
 OL;O;10.7c;67
 vadder
-Z1 !s110 1775699922
+Z1 !s110 1775705796
 !i10b 1
 !s100 =FZ@Y_SRkTM57cFBBNQ>B1
 I;aU=>S;4RhKjfUlE@_2T00
@@ -32,7 +32,7 @@ Z4 OL;L;10.7c;67
 r1
 !s85 0
 31
-Z5 !s108 1775699922.000000
+Z5 !s108 1775705796.000000
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/adder.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/adder.v|
 !i113 0
@@ -41,11 +41,11 @@ R0
 valu
 R1
 !i10b 1
-!s100 i68;e]K_MhkE0ced84ka[3
-I=CPW4j^U>=zZ>cckhSKQP3
+!s100 ]Jb3O2k5VYnQc9il0:HnR0
+IH=OQSF5a6_z28<SmEHNPl2
 R2
 R3
-w1775699899
+w1775704042
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/alu.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/alu.v
 L0 1
@@ -104,11 +104,11 @@ R0
 vcsr_alu
 R1
 !i10b 1
-!s100 j?A@hl[S]62:ZNVz:k=4V1
-I@5lEaZ;HZzz`?B9J>[ZVV3
+!s100 Q@L<RmO88bGU9SJeRMK]:3
+I;Rd_]RI6R1@U^288C;>_<1
 R2
 R3
-w1775698672
+w1775704057
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_alu.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_alu.v
 L0 1
@@ -123,13 +123,13 @@ R5
 R6
 R0
 vcsr_file
-R1
+!s110 1775705859
 !i10b 1
-!s100 EmGW][A_TC6fhGjo=[gHB1
-I];_LPa_BebzfY?PdhZ`Wc1
+!s100 d]Z79Sl8hB3SMP3MZL@c@1
+I3l]>fAB@DboL=JWiC3B903
 R2
 R3
-w1775698646
+w1775705855
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_file.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_file.v
 L0 1
@@ -137,20 +137,20 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1775705859.000000
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_file.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/csr_file.v|
 !i113 0
 R6
 R0
 vdata_memory
-R1
+!s110 1775706023
 !i10b 1
-!s100 [zHfkSD[^W6`E[UX:=@Ua3
-IzaON_1kiY0TaogWIO9RJJ1
+!s100 9^T`7`TUkM9`i8`LAShRz3
+I`Sn9IPB0G;BD?7LPmZ[V]1
 R2
 R3
-w1775698686
+w1775706016
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/data_memory.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/data_memory.v
 L0 1
@@ -158,14 +158,14 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1775706023.000000
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/data_memory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/data_memory.v|
 !i113 0
 R6
 R0
 vdecode_cycle
-R1
+Z7 !s110 1775705797
 !i10b 1
 !s100 o]V>Z;ShkZena__oQI5Wh1
 I27FN8OeNZ1hVc1i2PKBhT1
@@ -179,14 +179,14 @@ R4
 r1
 !s85 0
 31
-R5
+Z8 !s108 1775705797.000000
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/decode_cycle.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/decode_cycle.v|
 !i113 0
 R6
 R0
 vexecute_cycle
-R1
+R7
 !i10b 1
 !s100 VRMfZDSn78TNK5czYFNof0
 I8=T943R;F[LK9<WAeS8D_1
@@ -200,20 +200,20 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/execute_cycle.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/execute_cycle.v|
 !i113 0
 R6
 R0
 vextend
-R1
+R7
 !i10b 1
-!s100 O6egY@99Qj6Wk1KlmPYRO1
-I0H>g1d42A8GbzACj>Qh<z0
+!s100 ZjD<?2V@A`mTOgaIP7@mT1
+IKa7IUc4KmiTBKXE6S@@g>0
 R2
 R3
-w1775698715
+w1775704133
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/extend.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/extend.v
 L0 1
@@ -221,14 +221,14 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/extend.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/extend.v|
 !i113 0
 R6
 R0
 vfetch_cycle
-R1
+R7
 !i10b 1
 !s100 n]8fSi88ihbI@2G3lG0o[1
 Ia3hSKkAFaZJgj_B@@ZLHZ2
@@ -242,20 +242,20 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/fetch_cycle.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/fetch_cycle.v|
 !i113 0
 R6
 R0
 vhazard_unit
-R1
+R7
 !i10b 1
-!s100 M<z3RF7;`o5z<_W2f[DSF2
-IDfKNhVR:9Dc:@mWLe;HhC2
+!s100 LJP`GoLaN]Mb8[7^a8VLY3
+I2oOaVXeObMS0<NFRDQh?H1
 R2
 R3
-w1775698982
+w1775704203
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/hazard_unit.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/hazard_unit.v
 L0 1
@@ -263,14 +263,14 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/hazard_unit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/hazard_unit.v|
 !i113 0
 R6
 R0
 vinstruction_memory
-R1
+R7
 !i10b 1
 !s100 doBcNTa711EPBjzo;HNU50
 I1hfEHckbifFmhVESAD3KZ0
@@ -284,20 +284,20 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/instruction_memory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/instruction_memory.v|
 !i113 0
 R6
 R0
 vmain_decoder
-Z7 !s110 1775699923
+R7
 !i10b 1
-!s100 Y9c:FB7VRF0n2OHT6aS^T0
-IS_zm[dEBY:YjEU0hHR`;K2
+!s100 >=3z`E_n>=Xel9Me`aNSF2
+I2f^A1^ToJNz?5T2Ib2N?k1
 R2
 R3
-w1775535398
+w1775705689
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/main_decoder.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/main_decoder.v
 L0 1
@@ -305,7 +305,7 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/main_decoder.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/main_decoder.v|
 !i113 0
@@ -326,7 +326,7 @@ R4
 r1
 !s85 0
 31
-Z8 !s108 1775699923.000000
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/memory_cycle.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/memory_cycle.v|
 !i113 0
@@ -339,7 +339,7 @@ R7
 IQ:F<OZ^5R:oB:UPg?Hjgb3
 R2
 R3
-Z9 w1775698784
+Z9 w1775704274
 Z10 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/mux.v
 Z11 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/mux.v
 L0 1
@@ -377,8 +377,8 @@ R0
 vmux_4to1
 R7
 !i10b 1
-!s100 TN<oSh9eX?9lYhXYEP>E>0
-I=61l3I5O9RM`65cd3=Kb10
+!s100 jQRoUF_Z31LNz@FBZKcP31
+I@5Zfz=C6=S_G>zI`ATFFb1
 R2
 R3
 R9
@@ -522,13 +522,13 @@ R8
 R6
 R0
 vriscv_pipeline_top
-Z19 !s110 1775699989
+Z19 !s110 1775705798
 !i10b 1
-!s100 H^:0zV;Vk;3]=E@5Be_Jc3
-I^3eR;5BS11HiA4LU>VXJB1
+!s100 GSmM?HQK6fFn8VU]3DBNK2
+I1^YVK0H1iXWQ5X7FAo>U;1
 R2
 R3
-w1775554287
+w1775705767
 8C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/top_module.v
 FC:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/top_module.v
 L0 1
@@ -536,7 +536,7 @@ R4
 r1
 !s85 0
 31
-Z20 !s108 1775699988.000000
+Z20 !s108 1775705798.000000
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/top_module.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/top_module.v|
 !i113 0
@@ -564,7 +564,7 @@ r1
 R6
 R0
 vtb_decode_cycle
-Z21 !s110 1775699988
+R19
 !i10b 1
 !s100 ^9F_nBT0:>b>MjQkUeo>b0
 I3TTAN0jdCg3;HTAF`_e9T1
@@ -578,14 +578,14 @@ R4
 r1
 !s85 0
 31
-R20
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_id.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_id.v|
 !i113 0
 R6
 R0
 vtb_execute_cycle
-R21
+R7
 !i10b 1
 !s100 5b=DEc4=kO_ClD]g8E5?g1
 I<<ZV:PVaD^93bb6F19eH52
@@ -599,14 +599,14 @@ R4
 r1
 !s85 0
 31
-R20
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_ex.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_ex.v|
 !i113 0
 R6
 R0
 vtb_fetch_cycle
-R21
+R19
 !i10b 1
 !s100 jKzTL<@JW>5`e72eiUMAW2
 IVQJ5SBW1zG5[l:nIahiC11
@@ -627,7 +627,7 @@ R20
 R6
 R0
 vtb_memory_cycle
-R21
+R19
 !i10b 1
 !s100 JoVReLJMWAoe4_P]C4oYQ0
 I?[1?]MB5hQ4c9CN>e6[o63
@@ -648,7 +648,7 @@ R20
 R6
 R0
 vtb_riscv_pipeline_full
-R21
+R19
 !i10b 1
 !s100 Di[^ZZL7Wb7@HnX>KAB9[0
 I5fh2?kR0gcPUf:D`5gMQG0
@@ -669,7 +669,7 @@ R20
 R6
 R0
 vtb_riscv_pipeline_mega
-R21
+R7
 !i10b 1
 !s100 4R`B48?>gMXjJRlc^eX2;0
 I^Qa]<Rl@lA6@UBXd6oKgX0
@@ -683,14 +683,14 @@ R4
 r1
 !s85 0
 31
-R20
+R8
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_full.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/tb_full.v|
 !i113 0
 R6
 R0
 vtb_writeback_cycle
-R21
+R19
 !i10b 1
 !s100 GT]80P_QR>oc_DdRO?VF40
 I8fJXTUzK]f<]zaza@SaSH3
@@ -725,7 +725,7 @@ R4
 r1
 !s85 0
 31
-!s108 1775699989.000000
+R20
 !s107 C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/writeback_cycle.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/admin/Desktop/Verilog/rtl_code_no_ram/New folder/writeback_cycle.v|
 !i113 0

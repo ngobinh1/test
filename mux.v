@@ -29,7 +29,7 @@ module mux_4to1 (
     input  [2:0] s,   // Result source signal (2-bit)
     output reg [31:0] y
 );
-    always @(s) begin
+    always @(s or d0 or d1 or d2 or d3) begin
         case(s)
             3'b000: y = d0; 
             3'b001: y = d1; 

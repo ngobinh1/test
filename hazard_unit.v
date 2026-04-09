@@ -49,7 +49,7 @@ module hazard_unit (
     // When a load instruction is in Execute stage and the next instruction 
     // in Decode needs that loaded value, we must stall
     // result_src_e[0] == 1 indicates a load instruction (result from memory)
-    assign stall = result_src_e[0] && ((rs1_d == rd_e) || (rs2_d == rd_e));
+    assign stall = result_src_e[0] && (rd_e != 5'b00000) && ((rs1_d == rd_e) || (rs2_d == rd_e));
     assign stall_f = stall;
     assign stall_d = stall;
 

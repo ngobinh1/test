@@ -4,7 +4,7 @@ module extend(
     output reg [31:0] imm_ext
 );
 
-    always @(imm_src) begin
+    always @(imm_src or instr) begin
         case(imm_src)
             // I-type: sign-extend imm[11:0]
             3'b000: begin

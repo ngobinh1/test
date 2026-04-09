@@ -18,7 +18,7 @@ module data_memory (
     wire [1:0] byte_offset = addr[1:0]; // Locate the byte within word
 
     // ---------------- LOGIC LOAD ----------------
-    always @(funct3) begin
+    always @(funct3 or word or byte_offset) begin
         if (!rst) read_data = 32'd0;
         else begin
             case(funct3)

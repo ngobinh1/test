@@ -271,15 +271,12 @@ module riscv_pipeline_top (
         .csr_wd_w(csr_wd_w)
     );
 
-    // csr_file instance
-    // csr address is determined in decode stage and passed down to execute, memory, and writeback stages
-    wire [11:0] csr_addr_to_file = (csr_we_w) ? csr_addr_w : instr_d[31:20];
-
     csr_file csr_file_inst (
         .clk(clk),
         .rst(rst),
         .csr_we(csr_we_w),
-        .csr_addr(csr_addr_to_file),
+        .csr_raddr(instr_d[31:20]), // Read address from Decode stage
+        .csr_waddr(csr_addr_w),      // Write address from Writeback stage
         .csr_wd(csr_wd_w),
         .csr_rd(csr_rd_d),
         .is_exception(is_ecall_d),

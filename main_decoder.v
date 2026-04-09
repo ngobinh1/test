@@ -39,7 +39,7 @@ module main_decoder (
     assign imm_src = (op == 7'b0100011) ? 3'b001 :  // S-type (store)
                     (op == 7'b1100011) ? 3'b010 :   // B-type (branch)
                     (op == 7'b1101111) ? 3'b011 :   // J-type (JAL)
-                    (op == 7'b0110011) ? 3'bxxx :   // R-type (don't care)
+                    // (op == 7'b0110011) ? 3'bxxx :   // R-type (don't care)
                     (op == 7'b1110011) ? 3'b100 :   // CSR instructions (if needed)
                     3'b000;                         // I-type (default, includes LUI/AUIPC)
 
