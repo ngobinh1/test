@@ -1,0 +1,76 @@
+`timescale 1ns/1ps
+
+module tb_riscv_pipeline_mega();
+    reg clk;
+    reg rst;
+
+    riscv_pipeline_top dut (
+        .clk(clk),
+        .rst(rst)
+    );
+
+    always #5 clk = ~clk;
+
+    // Monitor additional registers for easier debugging
+    wire [31:0] reg_x3  = dut.decode_stage.register_file.register_array[3];
+    wire [31:0] reg_x4  = dut.decode_stage.register_file.register_array[4];
+    wire [31:0] reg_x7  = dut.decode_stage.register_file.register_array[7];
+    wire [31:0] reg_x8  = dut.decode_stage.register_file.register_array[8];
+    wire [31:0] reg_x22 = dut.decode_stage.register_file.register_array[22];
+    wire [31:0] reg_x25 = dut.decode_stage.register_file.register_array[25];
+    wire [31:0] reg_x26 = dut.decode_stage.register_file.register_array[26];
+    wire [31:0] reg_x29 = dut.decode_stage.register_file.register_array[29];
+    wire [31:0] reg_x31 = dut.decode_stage.register_file.register_array[31];
+
+    initial begin
+        clk = 0; rst = 0;
+        
+        $readmemh("full_test.hex", dut.fetch_stage.instruction_memory.mem);
+        
+        #20 rst = 1;
+
+        $display("\n========================================================");
+        $display("   [MEGA TEST DEBUG] DETAILED VALUES OF EACH REGISTER");
+        $display("========================================================");
+
+        // Wait 400 clock cycles to process 55 instructions + stall cycles
+        #4000; 
+
+        $display("\n--- 1. ALU COMPUTATION STAGE (Test Data Hazard) ---");
+        $display("x3  (addi -10) : %0d \t(Hex: %h)", $signed(reg_x3), reg_x3);
+        $display("x4  (xori)     : %0d \t(Hex: %h)", $signed(reg_x4), reg_x4);
+        $display("x7  (add)      : %0d \t(Hex: %h)", $signed(reg_x7), reg_x7);
+        $display("x8  (sub)      : %0d \t(Hex: %h) -> Should be 3", $signed(reg_x8), reg_x8);
+
+        $display("\n--- 2. COMPARISON (Test SLT signed/unsigned) ---");
+        $display("x22 (slt x3,x8): %0d \t(Hex: %h) -> Should be 1", reg_x22, reg_x22);
+
+        $display("\n--- 3. MEMORY ACCESS (Test Load-Use Stall) ---");
+        $display("x25 (lw)       : %0d \t(Hex: %h)", $signed(reg_x25), reg_x25);
+        $display("x26 (add x25,0): %0d \t(Hex: %h) -> Should be 3", $signed(reg_x26), reg_x26);
+        $display("x29 (lb x7)    : %0d \t(Hex: %h) -> Should be ffffffef", $signed(reg_x29), reg_x29);
+
+
+        $display("\n========================================================");
+        $display("                   OVERALL CONCLUSION                   ");
+        $display("========================================================");
+        
+        // Update with ACCURATE EXPECTED parameters
+        $display("1. Data Hazard & ALU: %s (Expected x8 = 3)", (reg_x8 == 3) ? "PASS" : "FAIL");
+        $display("2. Set Less Than    : %s (Expected x22 = 1)", (reg_x22 == 1) ? "PASS" : "FAIL");
+        $display("3. Load-Use Stall   : %s (Expected x26 = 3)", (reg_x26 == 3) ? "PASS" : "FAIL");
+        $display("4. Memory Access    : %s (Expected x29 = ffffffef)", (reg_x29 == 32'hFFFFFFEF) ? "PASS" : "FAIL");
+        
+        $display("\n--- CONTROL HAZARD SUMMARY (BRANCH/JUMP) ---");
+        if (reg_x31 === 32'd1) begin
+            $display(">> [PERFECT PASS] Pipeline bypassed all Traps!");
+        end else if ($signed(reg_x31) < 0) begin
+            $display(">> [FAIL] CPU fell into TRAP number: %0d", reg_x31);
+        end else begin
+            $display(">> [FAIL] System hang. x31 = %h", reg_x31);
+        end
+
+        $display("========================================================\n");
+        $finish;
+    end
+endmodule
