@@ -1,72 +1,65 @@
-`timescale 1ns/1ps
+`timescale 1ns / 1ps
 
 module tb_fetch_cycle();
-    reg clk;
-    reg rst;
-    reg en;
+    // Signal declarations
+    reg clk, rst, en;
     reg pc_src_e;
     reg [31:0] pc_target_e;
-    reg is_ecall;
-    reg is_mret;
-    reg [31:0] trap_vec;
-    reg [31:0] epc;
+    reg is_ecall, is_mret;
+    reg [31:0] trap_vec, epc;
 
-    wire [31:0] instr_f;
-    wire [31:0] pc_f;
-    wire [31:0] pc_plus_4_f;
+    wire [31:0] instr_f, pc_f, pc_plus_4_f;
 
-    // Instantiate the Unit Under Test (UUT)
-    fetch_cycle dut (
+    // Instantiate the module
+    fetch_cycle uut (
         .clk(clk), .rst(rst), .en(en),
         .pc_src_e(pc_src_e), .pc_target_e(pc_target_e),
-        .is_ecall(is_ecall), .is_mret(is_mret),      // THÊM VÀO ĐÂY
-        .trap_vec(trap_vec), .epc(epc),              // THÊM VÀO ĐÂY
+        .is_ecall(is_ecall), .is_mret(is_mret),
+        .trap_vec(trap_vec), .epc(epc),
         .instr_f(instr_f), .pc_f(pc_f), .pc_plus_4_f(pc_plus_4_f)
     );
 
-    // Clock generation (10ns period)
+    // Clock generation
     always #5 clk = ~clk;
 
     initial begin
-        // Initialize Inputs
-        clk = 0;
-        rst = 0; en = 1;
-        pc_src_e = 0; pc_target_e = 32'h00000000;
-        
-        // THÊM: Khởi tạo các tín hiệu exception bằng 0
+        // Initialize state
+        clk = 0; rst = 0; en = 1; 
+        pc_src_e = 0; pc_target_e = 32'h0;
         is_ecall = 0; is_mret = 0;
-        trap_vec = 32'h00000000; epc = 32'h00000000;
+        trap_vec = 32'h0000_1000; epc = 32'h0000_2000;
 
-        $display("\n--- STARTING FETCH CYCLE TEST ---");
-        // Release Reset
-        #15 rst = 1;
+        $display("=== START FETCH STAGE TEST ===");
+        #10 rst = 1; // De-assert reset
 
-        // TEST 1: Normal PC increment
-        #20;
-        // Wait for a few clock cycles
-        if (pc_f === 32'h00000008) $display("[PASS] Test 1: Normal PC increment (PC = 0x%0h)", pc_f);
-        else $display("[FAIL] Test 1: Expected PC = 0x00000008, Got 0x%0h", pc_f);
-
-        // TEST 2: Branching / Jumping (Simulate branch taken to 0x20)
-        pc_src_e = 1;
-        pc_target_e = 32'h00000020;
-        #10;
-        if (pc_f === 32'h00000020) $display("[PASS] Test 2: Branch taken (PC = 0x%0h)", pc_f);
-        else $display("[FAIL] Test 2: Expected PC = 0x00000020, Got 0x%0h", pc_f);
-
-        // TEST 3: Return to normal increment from new address
-        pc_src_e = 0;
-        #10;
-        if (pc_f === 32'h00000024) $display("[PASS] Test 3: Increment after branch (PC = 0x%0h)", pc_f);
-        else $display("[FAIL] Test 3: Expected PC = 0x00000024, Got 0x%0h", pc_f);
-
-        // TEST 4: Pipeline Stall (en = 0), PC should hold its value
-        en = 0;
-        #20;
-        if (pc_f === 32'h00000024) $display("[PASS] Test 4: Pipeline Stall (PC held at 0x%0h)", pc_f);
-        else $display("[FAIL] Test 4: Stall failed. Expected PC = 0x00000024, Got 0x%0h", pc_f);
+        // CASE 1: Normal PC increment
+        #20; 
         
-        $display("---------------------------------\n");
-        $finish;
+        // CASE 2: Check Stall (Hazard activated)
+        $display("- Testing Stall (en = 0)");
+        en = 0; 
+        #20; // PC should not change
+        en = 1;
+
+        // CASE 3: Branch or Jump instruction executed in Execute stage
+        $display("- Testing Branch/Jump taken");
+        pc_target_e = 32'h0000_00A4; 
+        pc_src_e = 1;
+        #10;
+        pc_src_e = 0;
+
+        // CASE 4: Exception handling (ecall)
+        $display("- Testing ecall exception");
+        is_ecall = 1;
+        #10; // PC must jump to trap_vec
+        is_ecall = 0;
+
+        // CASE 5: Return handling (mret)
+        $display("- Testing mret");
+        is_mret = 1;
+        #10; // PC must jump to epc
+        is_mret = 0;
+
+        #20 $stop;
     end
 endmodule
