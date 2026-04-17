@@ -13,7 +13,6 @@ module instruction_memory (
             mem[i] = 32'h00000000;
         end
 
-    $readmemh("full_test.hex", dut.fetch_stage.instruction_memory.mem);
     // $display("Memory[0] = %h", mem[0]); 
     // $display("Memory[1] = %h", mem[1]);
     // $display("Memory[2] = %h", mem[2]);
