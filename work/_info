@@ -1,0 +1,791 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Admin/Documents/GitHub/RAM
+T_opt
+!s110 1778205057
+VgLkz>hNI24kO03REeJ@oj2
+04 22 4 work tb_riscv_pipeline_mega fast 0
+=1-e884a5770f74-69fd4180-30b-1668
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.1;79
+vadder
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v
+Z3 !s110 1778197843
+!i10b 1
+!s100 YUb4>]J2aB_gKQzR]2Z4F0
+Ih@9d3D9h53JPkSaR5BK6X0
+Z4 dC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline
+Z5 w1776301131
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v
+!i122 0
+Z6 L0 1 7
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z9 !s108 1778197843.000000
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+valu
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v
+R3
+!i10b 1
+!s100 :E6Bha;FCZmNAjZ;NK4VI0
+IH5d80knFl:7W:l>fK?7j?0
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v
+!i122 1
+L0 1 58
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v|
+!i113 0
+R10
+R2
+valu_decoder
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v
+R3
+!i10b 1
+!s100 MCh4ZMXM<LgbQ;GmMZVmS1
+I[Gi=ACTHERF=LMJlm9YB00
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v
+!i122 2
+L0 1 51
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v|
+!i113 0
+R10
+R2
+vcontrol_unit
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v
+R3
+!i10b 1
+!s100 b4jOnh<mQS7Z5KcW5VRbF3
+IH^f1ORl=e9zBZ3H9d@I4V1
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v
+!i122 3
+L0 1 57
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v|
+!i113 0
+R10
+R2
+vcsr_alu
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v
+R3
+!i10b 1
+!s100 G8H_jD0H?n6_^QmM=J98n0
+ILGChBD?I_jz04URV1bO;[0
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v
+!i122 4
+Z11 L0 1 19
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v|
+!i113 0
+R10
+R2
+vcsr_file
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v
+R3
+!i10b 1
+!s100 f2;XCSR@k?<3JQEBoNGUQ1
+I>6I3cUQ3o0n1=L3SV08Yn1
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v
+!i122 5
+L0 1 70
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v|
+!i113 0
+R10
+R2
+vdata_memory
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v
+Z12 !s110 1778197844
+!i10b 1
+!s100 PcWFnDT`Zl8FeN9@a`[H@1
+IQSN0S>eAL86Zo>RYoYIEK2
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v
+!i122 6
+L0 1 75
+R7
+R8
+r1
+!s85 0
+31
+Z13 !s108 1778197844.000000
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v|
+!i113 0
+R10
+R2
+vdecode_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v
+R12
+!i10b 1
+!s100 B^nd<^ooefzfB>j0?Xd<i0
+IKk:DLeMMndK;o__YC2=:=1
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v
+!i122 7
+L0 1 83
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v|
+!i113 0
+R10
+R2
+vexecute_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v
+R12
+!i10b 1
+!s100 EHhH16YR7A3?dV8oTLiB93
+I[bP1IWMX9g:ZJFUzThPCJ3
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v
+!i122 8
+L0 1 85
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v|
+!i113 0
+R10
+R2
+vextend
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v
+R12
+!i10b 1
+!s100 @2KjFB<2FPkYUFATSzz[H1
+I>M>MLAg<Pg_]J^^;m7e>=1
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v
+!i122 9
+Z14 L0 1 40
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v|
+!i113 0
+R10
+R2
+vfetch_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v
+R12
+!i10b 1
+!s100 lS5XUQB@odeWE7hkD<NZ82
+INVae]NTA?[ljX6SZ^Af8R1
+R4
+Z15 w1776403729
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v
+!i122 10
+L0 1 63
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v|
+!i113 0
+R10
+R2
+vhazard_unit
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v
+R12
+!i10b 1
+!s100 3e<0l>E]3Tc0MX4T=<f?e1
+IIcYLbVF>m^<3AZ37mzX;:0
+R4
+R15
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v
+!i122 11
+L0 1 65
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v|
+!i113 0
+R10
+R2
+vinstruction_memory
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v
+R12
+!i10b 1
+!s100 aY2Oi`;H4eEReT9I`jZk;0
+Ifoz9KYAeM6^DS:R`8?aK13
+R4
+w1776408306
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v
+!i122 12
+R14
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v|
+!i113 0
+R10
+R2
+vmain_decoder
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v
+R12
+!i10b 1
+!s100 88Tof^7@WM@UJ@f=hBlB02
+IR>LiNCobf027;BSPFOWLP2
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v
+!i122 13
+L0 1 80
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v|
+!i113 0
+R10
+R2
+vmemory_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v
+R12
+!i10b 1
+!s100 4e^8`Vd]jeFm`Xa:fJaBQ2
+INIFL5[Y]?@`VbOS0:P4123
+R4
+R15
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v
+!i122 14
+R11
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v|
+!i113 0
+R10
+R2
+vmux
+Z16 2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v
+R12
+!i10b 1
+!s100 K]Hl`ZozQ2cWiL^A>kJBd3
+IciVY30D3TV[=8h;Mjzn?;0
+R4
+R5
+Z17 8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v
+Z18 FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v
+!i122 15
+R6
+R7
+R8
+r1
+!s85 0
+31
+R13
+Z19 !s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v|
+!i113 0
+R10
+R2
+vmux_3_1
+R16
+R12
+!i10b 1
+!s100 olhBOS>U5=S0eQ:j`o20W2
+I7LNRTh?>GXJf`QTB5]Nj>3
+R4
+R5
+R17
+R18
+!i122 15
+L0 9 13
+R7
+R8
+r1
+!s85 0
+31
+R13
+R19
+R20
+!i113 0
+R10
+R2
+vmux_4to1
+R16
+R12
+!i10b 1
+!s100 ;TBTm3U`dfDXHUf^4J_Y_2
+I`4mQfd?X<Z8SBIjEcR;Ui2
+R4
+R5
+R17
+R18
+!i122 15
+L0 24 17
+R7
+R8
+r1
+!s85 0
+31
+R13
+R19
+R20
+!i113 0
+R10
+R2
+vpc
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v
+R12
+!i10b 1
+!s100 V[cU=FEKIBMKe8CClej=?2
+Im78<N]R5LBo1hOl@71VcD0
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v
+!i122 16
+L0 1 27
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v|
+!i113 0
+R10
+R2
+vpipeline_1_2
+Z21 2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v
+R12
+!i10b 1
+!s100 hLdbk>Sf1WEYD1>9az4PB3
+IQjfbjjQkNa48`2XekOR>[2
+R4
+R15
+Z22 8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v
+Z23 FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v
+!i122 17
+L0 2 39
+R7
+R8
+r1
+!s85 0
+31
+R13
+Z24 !s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v|
+Z25 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v|
+!i113 0
+R10
+R2
+vpipeline_2_3
+R21
+R12
+!i10b 1
+!s100 ko811R_YiNR^]zf9IGEoE2
+IZgQZf01VLQZo3]?MESob33
+R4
+R15
+R22
+R23
+!i122 17
+L0 43 123
+R7
+R8
+r1
+!s85 0
+31
+R13
+R24
+R25
+!i113 0
+R10
+R2
+vpipeline_3_4
+R21
+R12
+!i10b 1
+!s100 Z1Z8i1Z:?@MzS=m7B117I3
+IX`Ddob<l?EJfc2dYRSDXL2
+R4
+R15
+R22
+R23
+!i122 17
+L0 168 89
+R7
+R8
+r1
+!s85 0
+31
+R13
+R24
+R25
+!i113 0
+R10
+R2
+vpipeline_4_5
+R21
+R12
+!i10b 1
+!s100 P=oRIn>FhRW@M2TjWOSZJ3
+I^E`mMH6cQYl4:671jZ<mY2
+R4
+R15
+R22
+R23
+!i122 17
+L0 260 79
+R7
+R8
+r1
+!s85 0
+31
+R13
+R24
+R25
+!i113 0
+R10
+R2
+vregister_file
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v
+R12
+!i10b 1
+!s100 U2dj`:5GSYTc<WcS^UV<D2
+I10<iSVj=mlf4ASWAm>fK]1
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v
+!i122 18
+L0 3 43
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v|
+!i113 0
+R10
+R2
+vriscv_pipeline_top
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/top_module.v
+R12
+!i10b 1
+!s100 _[jB^laTAS3Lb241SkcCH0
+IfLzzAzzajY4OQH0=m6m8@3
+R4
+R15
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/top_module.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/top_module.v
+!i122 19
+L0 1 321
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/top_module.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/top_module.v|
+!i113 0
+R10
+R2
+vtb_decode_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v
+Z26 !s110 1778197845
+!i10b 1
+!s100 HJZCA6fZcC2n9XGRf7FOV2
+IY;0ozLYC^e05@ldH1O0BZ0
+R4
+w1776305821
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v
+!i122 23
+L0 3 80
+R7
+R8
+r1
+!s85 0
+31
+Z27 !s108 1778197845.000000
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v|
+!i113 0
+R10
+R2
+vtb_execute_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v
+R26
+!i10b 1
+!s100 nJg=kVg`g71NZ126k?D`U1
+IhRUL2_J7g1m3W[P4alKNM1
+R4
+w1776305807
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v
+!i122 21
+L0 3 87
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v|
+!i113 0
+R10
+R2
+vtb_fetch_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v
+R26
+!i10b 1
+!s100 ]SCd0TQg]0:>?:T5ljDDU2
+I`ThomWJlHV3McS1_bi;kK2
+R4
+w1776305797
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v
+!i122 24
+L0 3 63
+R7
+R8
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v|
+!i113 0
+R10
+R2
+vtb_memory_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v
+R26
+!i10b 1
+!s100 103dOgfSUS[TXSI_Q0jZk3
+I?_OAkJGgGJiUPJP9n]UFS2
+R4
+w1776305831
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v
+!i122 25
+L0 3 56
+R7
+R8
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v|
+!i113 0
+R10
+R2
+vtb_riscv_pipeline_full
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_top.v
+R26
+!i10b 1
+!s100 KXHA2Lb@^F6>HA5IcT1G]3
+I_gZ:GbDeJl0kRdo2KKBYb3
+R4
+w1778197834
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_top.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_top.v
+!i122 26
+L0 3 68
+R7
+R8
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_top.v|
+!i113 0
+R10
+R2
+vtb_riscv_pipeline_mega
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_full.v
+!s110 1778205050
+!i10b 1
+!s100 S_b]n5YbLIghRjXB_1No32
+IMlY2Y;Ci5Sj^KM[Lm[jZW3
+R4
+w1778205038
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_full.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_full.v
+!i122 31
+L0 3 113
+R7
+R8
+r1
+!s85 0
+31
+!s108 1778205050.000000
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_full.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_full.v|
+!i113 0
+R10
+R2
+vtb_writeback_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v
+R26
+!i10b 1
+!s100 C^:ghVo_<9POCHfSW?TCL1
+IR2Gz1[eklzhn<QZTV6W@c0
+R4
+w1776305843
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v
+!i122 27
+L0 3 53
+R7
+R8
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v|
+!i113 0
+R10
+R2
+vwriteback_cycle
+2C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v
+R12
+!i10b 1
+!s100 4Mn8jJm6gO^d5>DPKMhWQ1
+IG50L>;E:]m7E[WOi6T:PZ3
+R4
+R5
+8C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v
+FC:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v
+!i122 20
+L0 1 20
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v|
+!i113 0
+R10
+R2

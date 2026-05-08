@@ -1,0 +1,186 @@
+C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_id.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module tb_decode_cycle
+
+Top level modules:
+	tb_decode_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_ex.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module tb_execute_cycle
+
+Top level modules:
+	tb_execute_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/extend.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module extend
+
+Top level modules:
+	extend
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_if.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module tb_fetch_cycle
+
+Top level modules:
+	tb_fetch_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/mux.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module mux
+-- Compiling module mux_3_1
+-- Compiling module mux_4to1
+
+Top level modules:
+	mux
+	mux_3_1
+	mux_4to1
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/data_memory.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module data_memory
+
+Top level modules:
+	data_memory
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/writeback_cycle.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module writeback_cycle
+
+Top level modules:
+	writeback_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pc.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/register_file.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module register_file
+
+Top level modules:
+	register_file
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/pipeline.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module pipeline_1_2
+-- Compiling module pipeline_2_3
+-- Compiling module pipeline_3_4
+-- Compiling module pipeline_4_5
+
+Top level modules:
+	pipeline_1_2
+	pipeline_2_3
+	pipeline_3_4
+	pipeline_4_5
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/alu_decoder.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module alu_decoder
+
+Top level modules:
+	alu_decoder
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/memory_cycle.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module memory_cycle
+
+Top level modules:
+	memory_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/adder.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/control_unit.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_alu.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module csr_alu
+
+Top level modules:
+	csr_alu
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/fetch_cycle.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module fetch_cycle
+
+Top level modules:
+	fetch_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/hazard_unit.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module hazard_unit
+
+Top level modules:
+	hazard_unit
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_mem.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module tb_memory_cycle
+
+Top level modules:
+	tb_memory_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/main_decoder.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module main_decoder
+
+Top level modules:
+	main_decoder
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/instruction_memory.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module instruction_memory
+
+Top level modules:
+	instruction_memory
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/execute_cycle.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module execute_cycle
+
+Top level modules:
+	execute_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/decode_cycle.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module decode_cycle
+
+Top level modules:
+	decode_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/tb/tb_wb.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module tb_writeback_cycle
+
+Top level modules:
+	tb_writeback_cycle
+
+} {} {}} C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v {1 {vlog -work work -vopt -stats=none C:/Users/Admin/Documents/GitHub/RV32I_RISC-V_Pipeline/src/csr_file.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module csr_file
+
+Top level modules:
+	csr_file
+
+} {} {}}

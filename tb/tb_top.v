@@ -26,7 +26,7 @@ module tb_riscv_pipeline_full();
         
         // Update the hex file name for the instruction memory (if using a different file name)
         // Note: Ensure the instruction_memory module in your code reads this exact file
-        $readmemh("memfile.hex", dut.fetch_stage.instruction_memory.mem);
+        $readmemh("tb/memfile.hex", dut.fetch_stage.instruction_memory.mem);
 
         // 2. System reset (Hold rst = 0 for a while then release to 1)
         #20 rst = 1;

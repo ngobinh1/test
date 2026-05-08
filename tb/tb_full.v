@@ -22,11 +22,11 @@ module tb_riscv_pipeline_mega();
     wire [31:0] reg_x29 = dut.decode_stage.register_file.register_array[29];
     wire [31:0] reg_x31 = dut.decode_stage.register_file.register_array[31];
 
-    integer cycle = 0; // Biến đếm chu kỳ clock
+    integer cycle = 0; 
 
     initial begin
         clk = 0; rst = 0;
-        $readmemh("full_test.hex", dut.fetch_stage.instruction_memory.mem);
+        $readmemh("tb/full_test.hex", dut.fetch_stage.instruction_memory.mem);
         
         #20 rst = 1;
 
@@ -78,9 +78,6 @@ module tb_riscv_pipeline_mega();
         $finish;
     end
 
-    // =========================================================================
-    // KHỐI THEO DÕI PIPELINE TẠI MỖI CHU KỲ (Chạy ở cạnh xuống của clock)
-    // =========================================================================
     always @(negedge clk) begin
         if (rst == 1'b1) begin
             cycle = cycle + 1;
